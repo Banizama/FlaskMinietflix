@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+        <form method="post">
+            {{ form.hidden_tag() }}
+            <div align="center">
+            <p>{{ form.username.label }} {{ form.username(size=50) }}</p>
+            {% for e in form.username.errors %}
+            <span style="color: red">{{e}} </span>
+            {% endfor %}
+            <p>{{ form.email.label }} {{ form.email(size=50) }}</p>
+            {% for e in form.email.errors %}
+            <span style="color: red">{{e}} </span>
+            {% endfor %}
+            <p>{{ form.password.label }} {{ form.password(size=50) }}</p>
+            {% for e in form.password.errors %}
+            <span style="color: red">{{e}} </span>
+            {% endfor %}
+            <p>{{ form.repeat_password.label }} {{ form.repeat_password(size=50) }}</p>
+            {% for e in form.repeat_password.errors %}
+            <span style="color: red">{{e}} </span>
+            {% endfor %}
+            <p>{{ form.remember_me.label }} {{ form.remember_me() }}</p>
+            <p>{{ form.submit}}</p>
+            <h5><a href="/login">Log In</a></h5>
+            </div>
+        </form>
+{% endblock %}

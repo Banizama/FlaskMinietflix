@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <form method="post">
+        {{ logout_form.hidden_tag() }}
+        <title>{{ title }}</title>
+        <h1 align="center">{{ message }}</h1>
+        <p>{{ logout_form.logout }}</p>
+    </form>
+{% endblock %}

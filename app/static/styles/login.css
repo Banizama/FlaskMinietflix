@@ -1,0 +1,32 @@
+.login_div{
+    padding: 1em;
+    border: 2px solid black;
+    border-spacing: 15px;
+}
+
+.text {
+font-family: Verdana;
+}
+
+.link{
+font-family: Verdana;
+padding-right: 100px;
+font-size: 30px;
+text-decoration: None;
+}
+
+.top_div{
+font-family: Verdana;
+font-size: 20px;
+text-decoration: None;
+}
+
+.btn{
+color: #00008B;
+border: 1.5px solid black
+
+}
+
+.btn:hover{
+    background-color: #00010B
+}
