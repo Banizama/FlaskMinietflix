@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+  <form method="post" enctype = "multipart/form-data">
+    <div class="films">
+      {% for i in films %}
+        <h1 align="center">{{ i.title }}</h1>
+        <img src="{{ i.image }}" height="500" width="300">
+        <h2 align="center"><a href="/{{ i.id }}" >Check</a></h2>
+<!--        <h2 align="center"><a href="/del_film/{{ i.id }}" >Delete</a></h2>-->
+      {% endfor %}
+    </div>
+  </form>
+{% endblock %}
